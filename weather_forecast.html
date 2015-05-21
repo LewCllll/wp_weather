@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taiwan Weather Forecast</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href=".css" rel="stylesheet" type="text/css"/>
+</head>
+  
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- Large button group -->
+      
+      <div class="btn-group">
+        <button class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> 
+          <span id="choose">CHOOSE ME!</span>
+          <span class="caret"></span>
+        </button>         
+        
+        <ul id="dropdown" class="dropdown-menu" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">台北市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">新北市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">台中市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">台南市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">高雄市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">基隆市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">桃園市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">新竹市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">新竹縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">苖栗縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">彰化縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">南投縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">雲林縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">嘉義市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">嘉義縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">屏東縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">宜蘭縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">花蓮縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">台東縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">澎湖縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">金門縣</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">連江縣</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="allNow" class="row">
+    <div class="col-xs-7">
+      
+      <div>
+        <span id="date-now">DATE</span>
+      </div>
+      
+      <div>
+        <span id="temp-now">TEMP.</span> &#8451;
+      </div>
+      
+    </div>
+    <div class="col-xs-5">
+      
+      <div>
+        <span id="condition-now">WEATHER CONDITION</span>
+      </div>
+      
+      <canvas id="today" width="100" height="100"></canvas>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Forecast</div>
+
+            <!-- Table -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th id="date1">DAY 1</th>
+                  <th id="date2">DAY 2</th>
+                  <th id="date3">DAY 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Temperature</strong></td>
+                  <td><span id="low1"></span> - <span id="high1"></span> &#8451;</td>
+                  <td><span id="low2"></span> - <span id="high2"></span> &#8451;</td>
+                  <td><span id="low3"></span> - <span id="high3"></span> &#8451;</td>
+                </tr>
+                <tr>
+                  <td><strong>Condition</strong></td>
+                  <td><canvas id="condition1" width="64" height="64"></canvas></td>
+                  <td><canvas id="condition2" width="64" height="64"></canvas></td>
+                  <td><canvas id="condition3" width="64" height="64"></canvas></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+  </div>
+  
+</div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="//darkskyapp.github.io/skycons/skycons.js"></script>
+<script src="myapp.js"></script>
+</body>
+</html>
