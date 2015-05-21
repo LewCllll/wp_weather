@@ -1,0 +1,43 @@
+.btn-group{
+  display:block;
+  margin:10px auto;
+  width:80%;
+}
+
+.btn{
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+#dropdown{
+  width:100%;
+  margin:60px auto;
+}
+
+#dropdown li{
+  width:100%;
+  margin:10px auto;
+}
+
+#date-now{
+  font-size:2em;
+  font-weight:bold;
+  color:purple;
+}
+
+#temp-now{
+  font-size:7em;
+  font-weight:bold;
+  color:purple;
+}
+
+#condition-now{
+  font-size:2em;
+  font-weight:bold;
+}
+
+.panel-heading{
+  font-size:1.5em;
+  font-weight:bold;
+}
+
